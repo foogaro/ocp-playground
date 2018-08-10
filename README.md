@@ -265,6 +265,7 @@ It will still take a couple of minutes to run a real OpenShift cluster based ent
 ## Web Console
 Now you can login as a "developer", with username "developer" and any password.
 Once it here is how OpenShift will look like:
+![alt text][web-console]
 
 
-
+[web-console]: https://github.com/foogaro/ocp-playground/blob/v3.10/web-console.png "OpenShift Container Platform"
