@@ -1,0 +1,13 @@
+#! /bin/bash
+
+mkdir -p existing-config
+ocp_home="existing-config"
+echo "OCP Home $ocp_home"
+
+# --enable=[*]: A list of components to enable.  '*' enables all on-by-default components, 'foo' enables the component named 'foo', '-foo' disables the component named 'foo'.
+# All components: automation-service-broker, centos-imagestreams, persistent-volumes, registry, rhel-imagestreams, router, sample-templates, service-catalog, template-service-broker, web-console
+# Disabled-by-default components: automation-service-broker, centos-imagestreams, service-catalog, template-service-broker
+
+
+oc cluster up --base-dir="$ocp_home" 
+
